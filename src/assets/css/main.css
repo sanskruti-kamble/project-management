@@ -1,0 +1,17 @@
+.bg-auth {
+  background-image: url("../images/bg-auth.jpg");
+  background-size: cover;
+}
+
+.my-grid-4 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.my-grid-6 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+

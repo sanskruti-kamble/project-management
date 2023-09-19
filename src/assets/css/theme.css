@@ -1,0 +1,21 @@
+root {
+    /* Primary Colors */
+  --clr-primary-300: #3b37ff;
+  --clr-primary-400:#2420E2;
+
+  /* Button Color */
+  --clr-button-400:#3B38FE;
+
+    /* Text Color */
+    --clr-text-100:#FEFEFF;
+    --clr-text-300:#8995A2;
+    --clr-text-800:#2B2C2D;
+
+    /* Margin Padding Radius */
+    --mpr-xs: 0.2em;
+    --mpr-s: 0.6em;
+    --mpr-m: 1em;
+    --mpr-l: 1.2em;
+    --mpr-xl: 1.6em;
+
+}
