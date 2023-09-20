@@ -13,7 +13,7 @@ export default function AccountBox(props) {
             {props.data.designation}
           </p>
           <p className="mb-0 fst-italic text-muted">
-            {/* {props.data?.createdAt?.toDateString()} */}
+            {new Date(props.data?.createdAt)?.toDateString()}
           </p>
         </div>
       </section>

@@ -21,18 +21,19 @@ export default function Task(props) {
               {new Date(props?.task?.createdAt)?.toDateString()}
             </p>
           </div>
-          {props?.task?.status !== "DONE" && (
-            <button
-              className="btn btn-primary btn-sm"
-              onClick={() => props.changeStatus(props?.task?.id)}
-            >
-              {props?.task?.status === "TO-DO"
-                ? "Start Task"
-                : props?.task?.status === "IN-PROGRESS"
-                ? "Task Done"
-                : ""}
-            </button>
-          )}
+          {props?.task?.status !== "DONE" &&
+            props?.account?.designation === "developer" && (
+              <button
+                className="btn btn-primary btn-sm"
+                onClick={() => props?.changeStatus(props?.task?.id)}
+              >
+                {props?.task?.status === "TO-DO"
+                  ? "Start Task"
+                  : props?.task?.status === "IN-PROGRESS"
+                  ? "Task Done"
+                  : ""}
+              </button>
+            )}
         </div>
       </div>
     </>

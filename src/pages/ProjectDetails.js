@@ -178,7 +178,7 @@ export default function ProjectDetails() {
 
         <div className="my-grid-6">
           {tasks.map((task) => (
-            <Task key={task.id} task={task} changeStatus={changeTaskStatus} />
+            <Task key={task.id} task={task} changeStatus={changeTaskStatus} account={accountData}/>
           ))}
         </div>
         {tasks.length === 0 && (
