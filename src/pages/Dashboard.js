@@ -7,6 +7,7 @@ export default function Dashboard() {
 
   useEffect(() => {
     isAccountLoggedIn();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   function isAccountLoggedIn() {

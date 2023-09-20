@@ -11,6 +11,7 @@ export default function Project(props) {
     const oldProjects = getItemFromLocalStorage();
     const filterProjects = filterProjectList(oldProjects);
     setProjects(filterProjects);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [accountData]);
 
   useEffect(() => {

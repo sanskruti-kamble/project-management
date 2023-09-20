@@ -18,14 +18,18 @@ export default function ProjectDetails() {
   useEffect(() => {
     setProjectDataHandler();
     setLoginAccountData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
     statusCountCheck();
-   
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [tasks]);
 
-  useEffect(()=>{ setTaskDataHandler();},[accountData])
+  useEffect(() => {
+    setTaskDataHandler();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [accountData]);
 
   async function setLoginAccountData() {
     const loginData = await JSON.parse(localStorage.getItem("loggedAccount"));
