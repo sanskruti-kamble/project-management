@@ -12,14 +12,14 @@ export default function Login() {
   async function loginHandler(event) {
     event.preventDefault();
 
-    if (username === "admin@davzon.com" && password === "admin@123") {
+    if (username === "admin@mail.com" && password === "admin@123") {
       toast.success("You are logged in as admin!");
       localStorage.setItem(
         "loggedAccount",
         JSON.stringify({
           id: 1,
           name: "Admin",
-          email: "admin@davzon.com",
+          email: "admin@mail.com",
           designation: "admin",
           password: "admin@123",
           createdAt: new Date(),
